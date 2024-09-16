@@ -1,0 +1,168 @@
+.bar {
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  
+  .barinter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100px;
+    margin-left: 15%;
+  }
+  
+  .logo {
+    cursor: pointer;
+    height: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    font-size: 26px;
+    transition: 0.4s;
+    text-transform: uppercase;
+  }
+  
+  .navbar_inter {
+    display: flex;
+    gap: 100px;
+    border-bottom: 2px solid transparent;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .link {
+    font-size: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .link:hover {
+    font-weight: 450;
+    cursor: pointer;
+    transform: scale(1.05);
+    border-bottom: 2px solid rgb(155, 155, 155);
+  }
+  
+  .bar .open_nav {
+    display: none;
+  }
+  
+  .hidden_nav {
+    visibility: hidden;
+  }
+  
+  @media (max-width: 1440px) {
+    .bar {
+      width: 100%;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+  
+    .barinter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      height: 120px;
+      margin-left: 15%;
+      list-style: none;
+    }
+  
+    .navbar_inter {
+      gap: 50px;
+    }
+  }
+  
+  @media (max-width: 1440px) and (min-width: 1024px) {
+    .link {
+      font-size: 22px;
+    }
+  
+    .navbar_inter {
+      font-size: 20px;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 1024px) and (min-width: 320px) {
+    .bar {
+      position: fixed;
+    }
+  
+    .hidden_nav {
+      visibility: visible;
+      height: 100vh;
+    }
+  
+    .navbar_inter {
+      font-size: 18px;
+      gap: 20px;
+    }
+  
+    .barinter2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      margin-top: 150px;
+      gap: 150px;
+    }
+  
+    .link {
+      font-size: 24px;
+    }
+  
+    .bartext {
+      font-size: 26px;
+    }
+  }
+  
+  @media (max-width: 768px) and (min-width: 320px) {
+    .hidden_nav {
+      visibility: visible;
+      height: 100vh;
+    }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .bar .open_nav {
+      display: block;
+      visibility: visible;
+    }
+  
+    .hidden_nav .link {
+      font-size: 26px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  
+  
+  
