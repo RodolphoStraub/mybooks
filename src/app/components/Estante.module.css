@@ -1,4 +1,73 @@
-.all{
-    background-color: gray;
-    height: 100vh;
+.all {
+  background-image: url("/estantefundo.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.sub_all {
+  background-color: rgb(65, 65, 65);
+  height: 465px;
+  width: 81%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 25px;
+}
+
+.terror,
+.fantasy,
+.fiction,
+.contos,
+.biografia {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 36px;
+}
+
+.terror{
+  background-color: black;
+}
+
+.fantasy {
+  background-color: rgb(112, 93, 114);
+}
+
+.fiction{
+  background-color: rgb(104, 117, 155);
+}
+
+.contos{
+  background-color: rgb(119, 109, 82);
+}
+
+.biografia{
+  background-color: rgb(128, 88, 65);
+}
+
+.list {
+  height: 380px;
+  display: flex;
+  overflow: auto;
+  list-style: none;
+  width: 98%;
+  margin-left: 1%;
+}
+
+.name {
+  color: white;
+}
+
+.cover {
+  height: 350px;
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cover:hover {
+  transform: scale(1.05);
 }
